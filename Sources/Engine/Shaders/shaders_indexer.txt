@@ -1,0 +1,36 @@
+Path: src\Engine\Shaders\
+
+//[0]					[1]			  [2]				 [3]				 [4]						[5]									 [6]						 [7]
+object object.shader [  OBJ_MVP{MVP}; OBJ_ViewMatrix{V}; OBJ_ModelMatrix{M}; OBJ_Tex{DiffuseTexture}; OBJ_Light{LightPosition}; OBJ_LightPower{LightPower}; OBJ_LightColor{LightColor}; ]
+
+
+//[0]						  [1]			  	 [2]				 [3]				 
+primitive primitive.shader [  PRI_ViewMatrix{V}; PRI_ModelMatrix{M}; PRI_Col{PrimitiveColor}; ]
+
+
+//[0]					[1]				  [2]				[3]									[4]
+sprite sprite.shader [ SP_ViewMatrix{V}; SP_ModelMatrix{M}; SP_myTextureSampler{DiffuseTexture}; asdfasdfadsf_asd{MVP}; ]
+
+
+//[0]							[1]				  [2]				[3]									  [4]							[5]							[6]
+spriteBlur spriteBlur.shader [ SP_ViewMatrix{V}; SP_ModelMatrix{M}; SP_myTextureSampler{DiffuseTexture}; asdfasdfadsf_asd{MVP};  SP_COORDS_BLUR{TexOffset}; SP_Z{depthBuffTex};  ]
+
+
+//[0]					[1]					[2]					[3]									[4]
+text text.shader     [  TX_ViewMatrix{V}; TX_ModelMatrix{M}; TX_myTextureSampler{DiffuseTexture};  TX_Color{TextColor}; ]
+
+
+//[0]								  [1]			      [2]				 [3]			 [4]						[5]					[6]						 	[7]		  [8]		  [9]		  [10]		  [11]						 [12]				[13]
+objectAdv objectAdv.shader [  OBJ_MVP{MVP}; OBJ_ViewMatrix{V}; OBJ_ModelMatrix{M}; OBJ_Tex{DiffuseTexture}; OBJ_asd{LightPosition}; OBJ_Asdf{LightPower}; OASD_asdfq{LightColor}; OBJ_KA{Ka}; OBJ_KD{Kd}; OBJ_KS{Ks}; OBJ_normal{NormalTexture}; OBJ_Three{MV3x3}; OBJ_Three{SpecularTexture}; ]
+
+
+//[0]					[1]				[2]				[3]
+skybox skybox.shader [ sk_mvp{V};  sk3_4mvp{P}; sk_diff{cube_texture}; asd_sd{M}; ]
+
+
+//[0]								[1]			[2]			[3]					[4]					[5]				[6]
+meshInstances meshInstances.shader [ mi_a{V}; mi_b{P}; mi_c{DiffuseTexture}; asd{LightPower}; asdq{LightColor}; vdf{LightPosition}; ]
+
+
+//[0]										[1]			[2]			[3]					[4]					[5]				[6]								[7]							[8]
+meshInstancesAdv meshInstancesAdv.shader [ mi_a{V}; mi_b{P}; mi_c{DiffuseTexture}; asd{LightPower}; asdq{LightColor}; vdf{LightPosition}; OBJ_normal{NormalTexture}; OBJ_Three{SpecularTexture}; OBJ_Three{MV3x3}; ]

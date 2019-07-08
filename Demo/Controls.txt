@@ -1,0 +1,8 @@
+W - go faster
+S - go slower
+A - move slightly to the left
+D - move slightly to the right
+SPACE - turn on booster
+
+Left Mouse - fire standard wpn
+Right Mouse - fire advanced wpn (rockets)
